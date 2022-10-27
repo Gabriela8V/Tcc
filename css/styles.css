@@ -1,0 +1,112 @@
+* {
+  /* zerar as margens externas dos elementos */
+  margin: 0;
+  /* zerar as mensagens internas dos elementos */
+  padding: 0;
+  /* ajuste das caixas(box) dos elementos */
+  box-sizing: border-box;
+}
+header {
+  height: 299px; /*altura da caixa*/
+  /*adicionar uma imagem ao fundo */
+  background-image: url("../img/carrinho_Logo.png.jpg");
+  /* ajustar a largura da imagem para 100%*/
+  background-size: 100%;
+  /* ajustar a posição em x e y da imagem de fundo */
+  background-position: 0 -155px;
+  /* animação no fundo */
+  transition: ease 2s;
+  padding-top: 90px;
+}
+h1 {
+  text-align: center;
+  font-family: verdana;
+  color: rgb(245, 236, 230);
+  /* aplicar sombra no texto*/
+  text-shadow: 10px 10px 5px black;
+}
+
+nav {
+  background-color: #b9f6ca;
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor itens da lista(li) em linha */
+  display: inline-block;
+  /* aumentar a distância entre os elementos*/
+  padding: 10px;
+  transition: ease 1s;
+}
+/* ao passar o mouse sobre o link o fundo link deve 
+  alter suar cor*/
+
+nav ul li:hover {
+  background-color: slategray;
+}
+
+nav ul li a {
+  font-family: verdana;
+  font-size: 10pt;
+  color: rgb(118, 93, 207);
+  /* retirar o underliner do linnk */
+  text-decoration: none; /*nenhum*/
+}
+footer {
+  height: 300px; /*altura em 300px*/
+  background-color: #69f0ae;
+  color: white;
+  font-family: arial;
+  padding-top: 40px;
+  /* dispor em form flexivel*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  width: 20%;
+  margin: 20px;
+}
+#redes ul li {
+  display: inline;
+  margin-left: 20px;
+}
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
+/*--------------Inicio do css home ---------------*/
+h2 {
+  font-family: Arial;
+  font-size: 20pt;
+  margin: 50px;
+  /*borda na parte inferior do h2*/
+  border-bottom: 1px solid rgb(228, 179, 179);
+}
+#home {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: verdana;
+  font-size: 12pt;
+  line-height: 20pt; /* espaçamento entre linhas*/
+  text-align: justify;
+}
+#imgHome {
+  text-align: center;
+}
+#imgHome img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  opacity: 0.7;
+  transition: ease 0.5;
+  /*mudar o ponteiro do mouse para uma mão*/
+  cursor: pointer;
+}
+#imgHome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
